@@ -1,0 +1,177 @@
+@charset "utf-8";
+*{
+    font-family: Roboto;
+  }
+.menu, .submenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+.menu {
+    display: flex;
+    align-self: flex-start;
+    width: 50%;
+  }
+  
+.menu__item {
+    display:inline;
+    margin-right: 50px;}
+  
+.menu a{
+    display: block;
+  }
+  
+.submenu {
+    display: none;
+  }
+  
+.menu__item:hover .submenu {
+    display: block;
+    z-index: 100;
+  }
+.submenu {
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+.main{
+    font-size: 40px;
+    margin: 0px;
+}
+a{ 
+    color:black;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+    color:grey;
+}
+ul{
+    padding-inline-start: 0px;
+}
+header{
+    text-align: center;
+}
+.sub-title{
+    color:#f2621e;
+    margin: 10px;
+    font-weight: bold;
+}
+.down{
+    font-size: 50%;
+    vertical-align: middle;
+    margin: 3px;
+}
+.small{
+    font-size: 15%;
+    vertical-align: middle;
+    margin: 3px;
+    color:#f2621e;
+}
+.icon-style{
+    color:#f2621e;
+    margin: 5px;
+}
+p{
+    color:grey;
+}
+.flex{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.flex-item{
+    box-sizing:border-box;
+    width: 20%;
+    margin: 2%;
+}
+.right{
+    margin-left: auto;
+}
+.white{
+    color:white;
+}
+.orange{
+    color:#f2621e;
+}
+
+.bold{
+    font-weight: bold;
+    color:black;
+}
+.orange-box{
+    background-color: #f2621e;
+    width:30px; height: 30px;
+}
+.orange-box{
+    background-color: #f2621e;
+    width:30px; height: 30px;
+    color:white;
+}
+.white-box{
+    background-color: white;
+    width:30px; height: 30px;
+}
+
+.sign_in{
+    width:80px; height: 30px;
+}
+.logo{
+    font-size: 30px;
+}
+.first{
+    display:grid;
+    grid-template-columns: auto 600px auto auto auto auto;
+    float:top;
+}
+.item1{
+    justify-self: left;
+}
+.item2{
+    justify-self: stretch;
+}
+.students{
+    background-image: url(Pics/laughing_background.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.snipped{
+    background-color: white;
+    width: 20%;
+    height: 80%;
+    display: block;
+}
+
+.flex-pics{
+    width:130px;
+    height: 130px;
+    margin:5px;
+}
+.icon-button{
+    font-size: 60px;
+}
+
+.icon{
+    font-size: 100px;
+}
+.grid{
+    display:grid;
+}
+
+aside{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(4, 54, 54);
+}
+
+.wrap{
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.bottom{
+    color: grey;
+}
