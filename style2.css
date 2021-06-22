@@ -91,7 +91,7 @@ body{
 .c_detail_page{
     margin:0;
     display: grid;
-    grid-template-rows: auto auto auto auto
+    grid-template-rows: auto auto 7rem auto
 }
 .row1{grid-row: 1; background-image: url(pics/row1_background.png); background-repeat: no-repeat; background-size: cover;}
 .row1_a{grid-row: 1; background-image: url(pics/laughing_background.jpg); background-repeat: no-repeat; background-size: cover;}
@@ -872,6 +872,12 @@ td a{
     border-bottom: 1px solid lightgray;
     font-size: 1.2em;
 }
+.question1{
+    font-weight: bold;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
 
 .questions{
     height: 62em;
@@ -965,7 +971,7 @@ td a{
     top:6em
 }
 .importance{
-    width: 37em;
+    width: 45rem;
 }
 
 .importance .big_icon{
@@ -1049,9 +1055,62 @@ td a{
 .videos{
     border-collapse: collapse;
     margin-bottom: 2rem;
-    width: 38rem;
+    width: 44rem;
 }
 
 .padded_top{
     padding-top:7rem;
+}
+
+.c_detail_page span .answer{
+    line-height: 2rem;
+    position: relative;
+    left:1rem;
+    bottom: 1rem;
+    margin-bottom: 0;
+    margin-right: 1rem;
+}
+
+.relative_ans{
+    border: 1px solid lightgray;
+    position: relative;
+    padding: 1rem 1rem 0 1rem;
+    margin:0 0 2rem 0;
+    
+}
+
+.c_detail_page .Course img{
+    margin: 0px 3.5rem;
+}
+
+.c_detail_page .Course p{
+    margin-left: 0;
+    line-height:normal;
+    width: auto;
+}
+
+.c_detail_page .centered{
+    justify-content: center;
+}
+
+aside .Course{
+    height: auto;
+    width: 23rem;
+    margin-bottom: 2rem;
+}
+#except{
+    border-style: none;
+}
+.tab{
+    width: 18rem;
+    margin-left: 3rem;
+    border-bottom: 1px solid lightgray;
+}
+aside a{
+    width: 17rem;
+    margin-left: 3rem;
+}
+aside a .blue{
+    padding:1rem;
+    margin-bottom:3rem;
 }
