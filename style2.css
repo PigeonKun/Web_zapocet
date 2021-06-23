@@ -3,6 +3,16 @@
     font-family: Roboto;
   }
 
+@media only screen and (max-width: 576px) {
+
+}
+@media only screen and (min-width: 576px) {
+
+}
+@media only screen and (min-width: 992px) {
+    
+}
+
 .menu, .submenu {
   list-style-type: none;
   padding: 0;
@@ -56,12 +66,12 @@ a:hover{
 body{
     margin:0;
     display: grid;
-    grid-template-rows: 11% 12% 11% 14% 8% 14% 10% 9% auto 12%;
+    grid-template-rows: 50rem 60rem 50rem 70rem 40rem 70rem 50rem 45rem auto 60rem;
 }
 .about_page{
     margin:0;
     display: grid;
-    grid-template-rows: auto 17% auto 15% auto 21% auto;
+    grid-template-rows: 20rem 47rem 40rem 40rem 50rem 60rem
 }
 .courses_page{
     margin:0;
@@ -76,7 +86,7 @@ body{
 .contact_page{
     margin:0;
     display: grid;
-    grid-template-rows: auto auto 57%;
+    grid-template-rows: auto auto 65%;
 }
 .detail_page{
     margin:0;
@@ -92,6 +102,11 @@ body{
     margin:0;
     display: grid;
     grid-template-rows: auto auto 7rem auto
+}
+.blog_standard_page{
+    margin:0;
+    display: grid;
+    grid-template-rows: auto 86% auto
 }
 .row1{grid-row: 1; background-image: url(pics/row1_background.png); background-repeat: no-repeat; background-size: cover;}
 .row1_a{grid-row: 1; background-image: url(pics/laughing_background.jpg); background-repeat: no-repeat; background-size: cover;}
@@ -144,15 +159,6 @@ li{
     font-size: 110%;
 }
 
-/*.head_nav{
-    display:grid;
-    grid-template-columns:20% 50% 30%;
-    padding: 10px;
-    /*display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: left;
-}*/
 .head_nav{
     display:flex;
     flex-direction: row;
@@ -168,17 +174,17 @@ li{
     width: inherit;
     justify-content: space-between;
     padding-top: 1%;
-    background-color: #c7dee4;
+    background-color: #eaf4f6;
 }
 .head_nav_bl nav{
     padding-top: 1%;
     width: auto;
     padding-right: 0;
-    margin-left: 23%;
+    margin-left: auto;
 }
 nav{
     padding-right: 5%;
-    width:40%;
+    width:auto;
     padding-top: 1%;
 }
 
@@ -197,7 +203,6 @@ nav{
     font-size: 30px;
     margin-top: 0.5%;
     color:black;
-    padding-left: 2%;
 
 }
 
@@ -274,7 +279,7 @@ nav{
     font-size: 300%;
 }
 .button_icon_b{
-    color:blue;
+    color:#3662ff;
     font-size: 300%;
     margin-top: 15%;
 }
@@ -320,6 +325,7 @@ nav{
     background-color: white;
     margin-right: 59%;
     margin-top: 1%;
+    width:30rem;
     min-width: 400px;
 }
 .flex_rowed{
@@ -475,10 +481,11 @@ nav{
 .magnify{
     background-color: #f2621e;
     color:white;
-    padding:3%;
+    padding:1rem;
+
 }
 input{
-    width: 70%;
+    width: 21rem;
     border: white;
     padding: 1.5em;
 }
@@ -495,7 +502,7 @@ input{
 }
 .top_a{
     display: flex;
-    color:blue;
+    color:#3662ff;
     padding: 2% 2% 2% 2%;
     width: 20%;
 }
@@ -572,7 +579,7 @@ p{
     color: white;
     font-weight: bold;
     width:max-content;
-    padding:1em;
+    padding:1rem;
     text-align: center;
 }
 .blue_button{
@@ -639,26 +646,27 @@ p{
 }
 .sponsors{
     text-align: center;
-    background-color: orangered;
+    background-color: #ea5922;
     margin: 0;
 }
 .email_search input{
-    background-color:teal;
+    background-color:#0d3541;
     color:grey;
     font-size: 100%;
 }
 .footer{
-    padding-top: 2%;
-    padding-right: 17%;
-    padding-left: 15%;
+    padding-top: 1rem;
+    padding-right: 12rem;
+    padding-left: 12rem;
     color:white
 }
 .footer_container{
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width:70%;
-    margin-top:1%;
+    width: 40rem;
+    margin-top: 1rem;
+    margin-right: 3rem;
 }
 
 .col{
@@ -680,7 +688,7 @@ p{
     margin: 1rem
 }
 .tag{
-    background-color: blue;
+    background-color: #3662ff;
     color: white;
     border-radius: 4em / 5em;
     padding: 5px 15px;
@@ -774,10 +782,15 @@ p{
 .white_b img{
     margin:5% 7.5em;
 }
+.round{
+    border-radius: 50%;
+}
 
 .white_b input{
     border: 1px solid lightgray;
     margin: 0.5em;
+    color: black;
+    font-weight: bold;
 }
 .white_b form{
     height: 26em;
@@ -806,16 +819,15 @@ p{
 .up_button{
     background-color: cornflowerblue;
     color: white;
-    padding: 95%;
-    margin-left: 800%
+    padding: 1rem
+
 }
 
 .search_button{
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 3rem;
+    padding-right: 3rem;
     padding-bottom: 1.7em;
-    padding-top:1.5em;
-    margin-left: -3px;
+    padding-top: 1.5em;
 }
 
 td a{
@@ -824,27 +836,27 @@ td a{
 
 .b_fb{
     color: blue;
-    margin-right:-90px; 
+
 }
 
 .b_tw{
     color:lightskyblue;
-    margin-right:-90px; 
+    
 }
 .b_yt{
     color:red;
-    margin-right:-90px; 
+     
 }
 .b_in{
     color:magenta;
-    margin-right:-90px; 
+    
 }
 
 .copyright{
-    background-color: #2f5368;
-    padding:1%;
-    width: 61%;
-    margin-left: 16%;
+    background-color: #0d3541;
+    padding:1rem;
+    width: 59rem;
+    margin-left: 12rem;
 }
 
 .padded{
@@ -861,8 +873,8 @@ td a{
 .white_b .answer{
     color: gray;
     text-align: left;
-    margin: 0 0 2em;
-    width: 53em;
+    margin: 0 0 2rem;
+    width: 53rem;
 }
 
 .question{
@@ -912,7 +924,7 @@ td a{
 }
 
 .blue{
-    background-color:blue;
+    background-color:#3662ff;
 }
 
 .row3_a .flex_spaced article{
@@ -941,6 +953,8 @@ td a{
     width: 70%;
     border: white;
     padding: 1em;
+    color: black;
+    font-weight: bold;
 
 }
 .formular input[name=message]{
@@ -1018,7 +1032,7 @@ td a{
 }
 .instructor_page .sponsors {
     text-align: center;
-    background-color: orangered;
+    background-color: #ea5922;
     margin: 0;
 }
 .courses{
@@ -1033,10 +1047,11 @@ td a{
     border: 1px solid lightgray;
 }
 .instructor_page .copyright {
-    background-color: #2f5368;
+    background-color: #0d3541;
     padding: 1%;
     width: 61%;
     margin-left: 16%;
+    text-align: center;
 }
 .videos td{
     text-align: right;
@@ -1062,14 +1077,6 @@ td a{
     padding-top:7rem;
 }
 
-.c_detail_page span .answer{
-    line-height: 2rem;
-    position: relative;
-    left:1rem;
-    bottom: 1rem;
-    margin-bottom: 0;
-    margin-right: 1rem;
-}
 
 .relative_ans{
     border: 1px solid lightgray;
@@ -1106,11 +1113,247 @@ aside .Course{
     margin-left: 3rem;
     border-bottom: 1px solid lightgray;
 }
-aside a{
+.c_detail_page aside a{
     width: 17rem;
     margin-left: 3rem;
 }
 aside a .blue{
     padding:1rem;
     margin-bottom:3rem;
+}
+.blog_standard_page aside{
+    width: 23rem;
+}
+.c_detail_page p{
+    line-height: 2rem;
+}
+
+.c_detail_page .answer{
+    position: relative;
+    bottom: 1rem;
+}
+
+.blog_standard_page .Course_text{
+    width:41rem;
+    padding-left: 2rem;
+    padding-top:0;
+    line-height: 2rem;
+}
+.blog_standard_page .price{
+    width:min-content;
+    border-radius: 0.5rem;
+}
+
+.blog_standard_page .white_back{
+    height: min-content;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+.quote{
+    background-color: #3662ff;
+    color:white;
+    padding:3rem;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+}
+.white_b_h{
+    margin-top: 1em;
+    margin-left: 2em;
+    
+}
+.blog_standard_page form{
+    height:auto;
+    padding-bottom: 2rem;
+    
+}
+.blog_standard_page .white_b{
+    margin-bottom: 2rem;
+}
+.blog_standard_page aside form i{
+    position: relative;
+    right:3rem;
+}
+
+.blog_standard_page aside input{
+    border-radius:2rem;
+    background-color: #f5f6fa;
+    color: grey;
+    font-weight: bold;
+}
+.button_o{
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.button_o:hover{
+    color:white;
+    background-color: #f2621e;
+}
+.news{
+    border-bottom:1px solid lightgray;
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.news h3{
+    font-size: 1.2rem;
+}
+.news img{
+    margin: 1rem 1rem 1rem 0;
+}
+.news p{
+    margin:0;
+    position: relative;
+    bottom: 1.7rem;
+}
+.news div{
+    position: relative;
+    top:1rem
+}
+aside .News{
+    margin-left: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.images img{
+    margin:0
+}
+.images{
+    gap:0.5rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+.tags .button_o{
+    width: auto;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: grey;
+    margin: 0 0.2rem;
+    box-shadow: 0px 0px 5px 0px lightgray;
+    position: relative;
+}
+
+.tags{
+    height: 11rem
+}
+#relative{
+    position: relative;
+    top: 1.5rem;
+}
+.tags span{
+    margin-left: 0.5rem;
+}
+.tags .button_o:hover{
+    color:white;
+    background-color: #f2621e;
+    box-shadow: 0px 0px 5px 0px lightgray;
+}
+
+.points div .big_icon{
+    color: #f2621e;
+    position: relative;
+    top: 0.6rem;
+    margin-right: 0.5rem;
+}
+.points .flex_rowed{
+    justify-content: left;
+    height: 3rem;
+}
+.points{
+    margin-bottom: 2rem;
+}
+
+.bottom_tag{
+    border-bottom: 1px solid lightgray;
+    height: 3rem;
+}
+.bottom_tag h3{
+    position: relative;
+    top: 1rem;
+    margin-right: 1rem;
+}
+.long_instructor{
+    background-color: lightgrey;
+    padding:2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.last_news{
+    border:1px lightgray;
+    border-style: solid none solid none;
+    padding:3rem 0;
+    margin-bottom: 2rem;
+}
+.last_news img{
+    margin-right: 1rem;
+}
+
+.last_news p{
+    margin:0;
+}
+.last_news i{
+    position: relative;
+    top:0.4rem;
+}
+
+.last_news h4{
+    margin:0 0 0.5rem;
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+}
+.last_news .news_width{
+    width: 13rem;
+}
+.comment div{
+    height:3rem
+}
+.comment h4{
+    font-size: 1.2rem;
+}
+.comment h4, .orange_icon{
+    margin: 0
+}
+.comment{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.comment div{
+    line-height: 1.5rem;
+}
+.comment p{
+    margin-top:0.5rem
+}
+.reply{
+    margin-left: 8rem;
+}
+
+.comments{
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 2rem;
+}
+.last_form input{
+    background-color: #f5f6fa;
+    width: 17rem;
+    color: grey;
+    font-weight: bold;
+}
+
+.last_form input[name=comments]{
+    width:auto;
+    padding-bottom: 5rem;
+    margin: 1rem 0;
+}
+.last_form .orange_button{
+    width: 15rem;
+    padding: 0;
+}
+.footer input{
+    width: 60%;
+    border: white;
+    padding: 1.5em;
 }
