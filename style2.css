@@ -10,7 +10,7 @@
 
 }
 @media only screen and (min-width: 992px) {
-    
+
 }
 
 .menu, .submenu {
@@ -485,9 +485,12 @@ nav{
 
 }
 input{
-    width: 21rem;
+    width: 15rem;
     border: white;
     padding: 1.5em;
+}
+.search input{
+    width: 21rem;
 }
 .vertically_aligned{
     position: relative;
@@ -1315,7 +1318,7 @@ aside .News{
 .comment h4{
     font-size: 1.2rem;
 }
-.comment h4, .orange_icon{
+.comment h4, .comment .orange_icon{
     margin: 0
 }
 .comment{
@@ -1351,9 +1354,17 @@ aside .News{
 .last_form .orange_button{
     width: 15rem;
     padding: 0;
+    padding-left: 3rem;
 }
 .footer input{
     width: 60%;
     border: white;
     padding: 1.5em;
+}
+.head_nav, .head_nav_bl .logo{
+    margin-left: 1rem;
+}
+
+.news_width p{
+    font-size: 1rem;
 }
